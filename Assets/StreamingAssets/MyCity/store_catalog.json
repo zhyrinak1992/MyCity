@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Stores": [
+    {"StoreTypeId":"grocery","DisplayName":"Продуктовый магазин","Products":[
+      {"ProductId":"bread","DisplayName":"Хлеб","CategoryId":"food","StockUnits":80,"WholesalePrice":35,"RetailPrice":65},
+      {"ProductId":"milk","DisplayName":"Молоко","CategoryId":"food","StockUnits":60,"WholesalePrice":55,"RetailPrice":90},
+      {"ProductId":"meat","DisplayName":"Мясо","CategoryId":"food","StockUnits":35,"WholesalePrice":240,"RetailPrice":360},
+      {"ProductId":"vegetables","DisplayName":"Овощи","CategoryId":"food","StockUnits":55,"WholesalePrice":70,"RetailPrice":120},
+      {"ProductId":"fruit","DisplayName":"Фрукты","CategoryId":"food","StockUnits":45,"WholesalePrice":95,"RetailPrice":155}]},
+    {"StoreTypeId":"electronics","DisplayName":"Магазин электроники","Products":[
+      {"ProductId":"smartphone","DisplayName":"Смартфон","CategoryId":"electronics","StockUnits":8,"WholesalePrice":18000,"RetailPrice":26000},
+      {"ProductId":"television","DisplayName":"Телевизор","CategoryId":"electronics","StockUnits":5,"WholesalePrice":32000,"RetailPrice":45000},
+      {"ProductId":"refrigerator","DisplayName":"Холодильник","CategoryId":"appliances","StockUnits":4,"WholesalePrice":42000,"RetailPrice":59000},
+      {"ProductId":"laptop","DisplayName":"Ноутбук","CategoryId":"electronics","StockUnits":6,"WholesalePrice":48000,"RetailPrice":65000},
+      {"ProductId":"washing_machine","DisplayName":"Стиральная машина","CategoryId":"appliances","StockUnits":4,"WholesalePrice":29000,"RetailPrice":41000}]},
+    {"StoreTypeId":"clothing","DisplayName":"Магазин одежды и обуви","Products":[
+      {"ProductId":"jacket","DisplayName":"Куртка","CategoryId":"clothing","StockUnits":20,"WholesalePrice":2200,"RetailPrice":3900},
+      {"ProductId":"jeans","DisplayName":"Джинсы","CategoryId":"clothing","StockUnits":30,"WholesalePrice":1100,"RetailPrice":2100},
+      {"ProductId":"shoes","DisplayName":"Обувь","CategoryId":"footwear","StockUnits":24,"WholesalePrice":1800,"RetailPrice":3200},
+      {"ProductId":"shirt","DisplayName":"Рубашка","CategoryId":"clothing","StockUnits":35,"WholesalePrice":650,"RetailPrice":1250}]},
+    {"StoreTypeId":"furniture","DisplayName":"Мебельный магазин","Products":[
+      {"ProductId":"sofa","DisplayName":"Диван","CategoryId":"furniture","StockUnits":5,"WholesalePrice":18000,"RetailPrice":26000},
+      {"ProductId":"bed","DisplayName":"Кровать","CategoryId":"furniture","StockUnits":6,"WholesalePrice":12000,"RetailPrice":18500},
+      {"ProductId":"table","DisplayName":"Стол","CategoryId":"furniture","StockUnits":8,"WholesalePrice":6500,"RetailPrice":9800},
+      {"ProductId":"chair","DisplayName":"Стул","CategoryId":"furniture","StockUnits":20,"WholesalePrice":1800,"RetailPrice":2900}]},
+    {"StoreTypeId":"cosmetics","DisplayName":"Косметика и бытовая химия","Products":[
+      {"ProductId":"shampoo","DisplayName":"Шампунь","CategoryId":"care","StockUnits":40,"WholesalePrice":180,"RetailPrice":320},
+      {"ProductId":"soap","DisplayName":"Мыло","CategoryId":"care","StockUnits":55,"WholesalePrice":45,"RetailPrice":90},
+      {"ProductId":"cream","DisplayName":"Крем","CategoryId":"cosmetics","StockUnits":30,"WholesalePrice":260,"RetailPrice":450},
+      {"ProductId":"detergent","DisplayName":"Стиральный порошок","CategoryId":"household_chemicals","StockUnits":35,"WholesalePrice":240,"RetailPrice":390}]},
+    {"StoreTypeId":"books","DisplayName":"Книжный магазин","Products":[
+      {"ProductId":"novel","DisplayName":"Художественная книга","CategoryId":"books","StockUnits":25,"WholesalePrice":380,"RetailPrice":690},
+      {"ProductId":"textbook","DisplayName":"Учебник","CategoryId":"books","StockUnits":18,"WholesalePrice":520,"RetailPrice":890},
+      {"ProductId":"notebook","DisplayName":"Тетрадь","CategoryId":"stationery","StockUnits":60,"WholesalePrice":35,"RetailPrice":70},
+      {"ProductId":"pens","DisplayName":"Ручки","CategoryId":"stationery","StockUnits":50,"WholesalePrice":22,"RetailPrice":50}]}
+  ]
+}

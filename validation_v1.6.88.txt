@@ -1,0 +1,107 @@
+PASS persistent relationship record
+PASS save data relationship list
+PASS system attached
+PASS load wired
+PASS export wired
+PASS spouse creation
+PASS parent child creation
+PASS adult spouse validation
+PASS parent age gap validation
+PASS self relation prevented
+PASS cycle prevention
+PASS historical ending
+PASS co-residence not assumed
+PASS legacy-compatible optional list
+RESULT: 14/14
+PASS family generation runs only for new residential occupancy
+PASS family residents are grouped by exact home
+PASS stable household seed
+PASS couple archetype is explicit
+PASS two-parent children are explicit
+PASS single-parent archetype is explicit
+PASS roommates remain unrelated
+PASS child ages satisfy minimum parent gap
+PASS new citizens registered before relationship creation
+PASS relationship registration stores canonical citizen
+PASS family relationships persist on save
+PASS family relationships restore on load
+PASS shared residence not automatically treated as kinship
+RESULT: 13/13
+PASS family panel state exists
+PASS family panel toggle is available
+PASS family panel is drawn from OnGUI
+PASS selected citizen is displayed
+PASS spouse relationship is displayed
+PASS parent links are displayed
+PASS child links are displayed
+PASS co-residents are displayed separately
+PASS co-residence is not presented as kinship
+PASS family data comes from persisted relationship system
+PASS household membership comes from household system
+PASS close control exists
+PASS resident lookup uses persistent citizen id
+RESULT: 13/13
+PASS family account is serializable
+PASS family transaction ledger is serializable
+PASS responsibility allocations are serializable
+PASS save schema stores family accounts
+PASS save schema stores family transactions
+PASS save schema stores responsibility allocations
+PASS personal wallets are not merged
+PASS contribution validates household membership
+PASS contribution debits personal wallet
+PASS contribution credits shared account
+PASS shared expense checks available balance
+PASS shared expense debits shared account
+PASS expense is recorded in ledger
+PASS responsibility share is bounded
+PASS responsibility total cannot exceed 100
+PASS loaded responsibility totals are validated
+PASS save schema version is migrated
+PASS accounts are retained through household rebuild
+PASS family data is loaded from save
+PASS family data is exported to save
+PASS family account UI is present
+PASS contribution action is wired
+PASS shared expense action is wired
+PASS responsibility UI is wired
+PASS recent family operations are displayed
+RESULT: 25/25
+PASS C# brace balance: 40 files
+NOTE: static checks do not replace Unity compilation, Play Mode, save/load runtime, or iOS build.
+PASS | Citizen death and burial fields are serializable
+PASS | Funeral event history is included in city save data
+PASS | Age advances on 360-day game years
+PASS | Natural mortality is deterministic and age-gated
+PASS | Death stops employment and records life history
+PASS | Morgue capacity is enforced
+PASS | Cemetery capacity and two-day morgue hold are enforced
+PASS | Facility removal returns pending cases to queues
+PASS | Funeral data loads and saves
+PASS | New morgue and cemetery can be built
+PASS | Deceased residents are not restored as active agents
+PASS | Deceased residents remain archived across reloads
+PASS | Deceased residents cannot shop
+PASS | Deceased residents are excluded from household aggregation
+PASS | Life-cycle panel is exposed
+PASS | Save schema migrated to 21
+RESULT: 16/16
+PASS | Funeral event journal deduplicates citizen records on load
+PASS | Lifecycle counters are reset before restoration
+PASS | Lifecycle counters can be rebuilt from restored citizens
+PASS | Selected deceased resident shows death day and cause
+PASS | Selected deceased resident shows funeral processing status
+PASS | Spouse archive state is visible in family profile
+PASS | Parent archive state is visible in family profile
+PASS | Child archive state is visible in family profile
+PASS | Funeral panel includes cause and burial day
+RESULT: 9/9
+
+=== family + economy ===
+
+=== life-cycle core ===
+
+=== life-cycle integration ===
+
+RESULT: 90/90 functional static checks passed (65 family/economy + 16 life-cycle + 9 integration).
+NOTE: Unity compile, Play Mode, runtime save/load, profiling and iOS build require Unity/Xcode and were not executed.
