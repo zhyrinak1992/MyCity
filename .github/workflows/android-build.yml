@@ -1,0 +1,48 @@
+name: My City Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - android-build-v2.167
+    paths:
+      - 'Assets/**'
+      - 'Packages/**'
+      - 'ProjectSettings/**'
+      - '.github/workflows/android-build.yml'
+
+jobs:
+  build:
+    name: Build My City for Android
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Cache Unity Library
+        uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-Android-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Library-Android-
+
+      - name: Build Android APK
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          targetPlatform: Android
+          unityVersion: 6000.3.29f1
+          buildMethod: MyCityAndroidBuild.PerformBuild
+          allowDirtyBuild: true
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: MyCity-Android-APK
+          path: build/Android/MyCity.apk
+          if-no-files-found: error
+          retention-days: 14
